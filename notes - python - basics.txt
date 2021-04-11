@@ -1,0 +1,86 @@
+Notes
+
+jupyter notebook is the IDE
+one way of opening it is - via terminal - jupyter notebook
+
+console - does not have interactive experience. It wont customize our way of writing code.
+GUI - a themed place for customizing our way of writing code. kind of animated way.
+
+jupyter notebook - opens a browser in localhost
+which is a document structure. Its a console where in you write your console line by line programming.
+we can present our code.
+files gets saved as ipynb - i-python-note-book format.
+
+what is kernel,
+language in which the notebook is going to run.
+we can run R, python2, frameworks as a kernal. Provided we install those kernels.
+without kernel, we cant run the program.
+
+spyder - save the notebook as py file
+main diff is GUI (write the function as a whole)
+
+to install modules - pip install "module_name"
+or else use conda installation, give commands with "!"
+
+! is used to run console based commands inside the cells in jupyter notebooks.
+
+Google colab is for giving access for notebooks
+for outside the world.
+
+Ways to run python
+1) IDE - pycharm, spyder, kite, colab, jupyter notebook, jupyterlabs
+2) Immediate mode - cmd or terminal based
+(use the prompt directly to run the code)
+(to come out of python mode, use exit())
+3) scripting mode - create a file with an extension .py and then run using python "xx.py"
+
+In [x] - x is the order in which the cell is executed line by line.
+
+comments - non executable readable statements
+for single line comments in python - use #
+for multi line its ''' '''
+
+Keywords, Identifiers, Variables in python
+
+keywords (special word) has a special purpose inside python. It unlocks some of process in python.
+keywords are bold letters in green color (for denoting in IDE)
+for non keywords - appear ordinary.
+
+python libraries are available in the bin folder where we installed in python (use import to load the library)
+
+Identifiers
+User defined names to any variables (functions, temporary stuffs inside our notebook)
+Variables - memory entities whose values will change during the course of the program execution.
+place to store the data.
+
+Identifier rules:
+1) Cannot be keywords (keywords are reserved word)
+2) do remember the errors which we get, which will help us in understand the problem
+ex - SyntaxError - when we break the rules for writing a program in python
+3) cannot start with a number
+4) no space between them
+5) no special characters (special chars are also reserved words) !, @, $, #, %
+6) its case sensitive
+7) variable is not defined comes as NameError
+
+python2 - python3 - more mathematical operations have been added
+more unicode support
+print from keyword to a function
+syntactical improvements
+better exception handling
+
+Data types
+to process data we need to understand the data
+
+types
+string, integer, float, array, object
+int - finite - countable whole numbers
+float - numbers with decimal points
+boolean - true or false
+string
+
+diff between freeware and free software
+Free software - software that can be used, studied, modified without restrction and which can be copied, and redistributed in modified
+or unmodified from either without restriction
+freeware - anyone can download from internet and use for free. examples are skype or adobe acrobat
+python is a free, open-source programming language for everyone to use.

@@ -1,0 +1,71 @@
+Data types
+
+complex number
+ex = 1 + 4j (real part + imaginary part)
+
+#lists
+collection of different types of things
+allows heterogeneour types of things
+indices are zero based
+its mutable using index
+lists are represented using []
+
+List operations
+sam.sort()
+sam.sort(reverse = True)
+for descending order.
+
+.append() = for appending a value to the list at the end.
+Typeerror = its a type mismatch
+ASCII value A-65, a-97
+string sort goes for Capital letter first
+we can use sorted() also
+sorted will not modify or mutate the string
+we have to assign back to get the updated value.
+
+.insert(index, value)
+docstring - sugestion for parameters for inbuilt functions
+index place at which my value will go
+
+.pop (remove by index), .remove (remove by value) for removing the array elements
+pop will give the value as a result
+IndexError, ValueError
+
+pop giving a wrong index will give indexError 
+insert can do on a non available index, it will go to the last available slot.
+to get size of list, use len(list)
+
+#List_slicing
+start accessing a series of elements
+list[2(start):5(end):2(step)]'accesses at start, goes still the end - 1
+step is the gap between the series of elements
+for eg: list[2:5:2]
+from index 2 to index 5-1 (4)
+have a gap of 2 in between
+
+array from the end is indexed as -1,-2,-3,-4,-5...
+so when we are trying to access list from the end, start should point to the start of the array, accessed via negative index.
+list[::-1]
+for reversing the list
+
+#Tuple
+diff between tuple vs list
+similarities
+allows heterogeneous
+retrieve using indices
+but cant change the data once declared in tuple
+it is immutable
+it is declared using paranthesis
+
+used in a place, where value is fixed.
+using del, we can delete the tuple and it cant be accessed after that. We will get NameError.
+
+#SET
+can add hetergeneous data
+wont allow duplicates
+cannot access using index
+it is immutable
+and sometimes order of value also changes
+will use a curly braces {}
+it will remove the duplicates
+used in list convert to set, remove duplicates, and then convert back to list (basic usecase)
