@@ -1,0 +1,40 @@
+HW: 
+1. TC - and one TC for -  replace() - Is replace just a wrapper?
+2. Space Complexity
+3. How set internally works in python
+
+1)
+Big O notation is calculated at worse case scenarios.
+Lets say n is the length of the string
+and m be the replacements
+So worse case finding matches can be O(n*m).
+Average case can be O(n).
+
+Not sure whether replace method is a wrapper function.
+I tried to inspect the code - python built-in methods. But couldnt find much. Getting error. Need more info
+
+from inspect import getsource
+getsource(str.replace.code)
+
+I think replace is a python function, which internally calls the low level function which does the loop and
+replaces stuffs.
+
+2)
+Space complexity of an algorithm is total space taken by the algorithm with respect to the input size. It includes both
+temporary space and space used by input.
+
+For eg. If we need to create an array of size(n), this will require o(n) space. If we create a two dimensional array of n*n,
+this will required O(n2) space.
+
+In case of recursive calls, stack space also counts. It depends on programming language, compiler or even the
+machine running the algorithm.
+
+3)
+How set works internally in python
+
+The data structure internally used for set is hashing (hash table).  Insertion, deletion, traversal is O(1) on average.
+Sets in python are unordered list with duplicate elements removed.
+
+
+
+
