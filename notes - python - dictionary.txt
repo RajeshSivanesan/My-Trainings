@@ -1,0 +1,91 @@
+Dictionary
+
+typecasting - convert one to another type
+operations - that can be performed using this.
+
+Dictionary
+1) key value pair
+2) key is unique (if u use existing key, value will replace)
+3) values can be duplicated
+4) since key is unique, we can access them using it.
+5) change the value using the key
+6) key is immutable
+We can have None, empty space as key.
+Dictionaries are likes hashmaps, maps
+
+Logical error - code will run in case of it. But the usage will not be satisfied.
+Syntax error - issue in the code constructs, error in the way we write the code in a language.
+
+#String
+collection of characters
+1) Strings can be retrieved using index
+2) String is immutable
+3) string also can be sliced.
+
+get a input from user
+input("string")
+
+String functions
+A = "inceptez batch 16
+
+strings are saved inside python as unicode characters.
+UTF-8 - is the default format.
+it can use 1*1byte - 4*1byte
+to handle different encoding in python, look at set of the possible options. Try converting them and understand
+encoding - convert to another format where the machine can understand
+opp to it is decoding.
+
+to find the string contains
+use "string" in the variable.
+use split method to split the string by a delimiter.
+use strip method to remove some characters from the string
+.lstrip() - for left strings.
+.rstrip() for removing the right strings
+
+#Multi line string
+''' - triple quotes
+print(x) - will print the exact values without \n
+
+## join functions
+Delimiter - seperator
+"delimiter".join(list)
+joins the string with the delimiter.
+
+iterable - structure which has multiple elements, which has support for iterating.
+.replace("string_to_be_replaced", "value_to_replace")
+replace by default will replace all occurences.
+last parameter to replace will tell us how many occurences to replace.
+
+Type conversion:
+from one type to another type.
+list(s)
+tuple(s)
+set(s) - to get unique chars in the string.
+
+deep copy or shallow copy
+deep copy - has a seperate copy for it for all levels. uses copy() has a altogether complete new memory.
+shallow copy - uses "="  its just points to the same memory.
+list slicing can also used as a slicing.
+Its a shallow copy.
+
+#Conditional loops
+use a condition, to perform
+
+Homework for python
+space complexity - for shallow copy or deep copy
+time complexity - set and replace. Is replace a wrapper function.
+
+if condition and condition:
+ functionality.
+
+sample
+
+we use input() gives us string. So we convert to int for checking the numbers.
+
+n = int(input("Enter a number"))
+if n <= 20:
+    print("20");
+elif n <= 50:
+    print("50");
+else:
+    print("greater than 50");
