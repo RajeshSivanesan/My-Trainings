@@ -1,0 +1,126 @@
+advanced functions in python
+
+We can use something as anonymous functions
+it will not have a function name
+
+u call this function by using lamba keyword. Lamda function.
+
+Syntax is
+Lambda arguments: operation
+
+for eg:
+s = lambda y: y*y
+
+sumof3 = lambda x,y,z: x+y+z
+
+usage with lists
+num = [1,2,3,4,5,6,7,8,9,10]
+
+y = list(map(lambda z: z**2, x))
+
+syntax is we use a map function to apply function for each element of an array
+finally we convert to a list and assign back.
+
+will it work for 2D arrays also
+
+float_nums = [4.77, 8.99, 2.33, 10.99, 6,33]
+float_value = list(map(int, float_nums))
+print(float_value)
+
+names = ['jack', 'sparrow', 'harry', 'potter']
+index = [1,2,3,4]
+
+final_list = list(map(lambda x,y: (x,y), names, index))
+print(final_list)
+
+#example with custom function
+-- lambda is removed
+names = ['jack', 'sparrow', 'harry', 'potter']
+index = [1,2,3,4]
+
+def sample_func(x, y):
+    return {x, y}
+
+final_list = list(map(sample_func, names, index))
+
+#ZIP
+binds two iterables into one.
+
+binds the minimum number of elements
+i mean array with fewer elements - zip will stop from that.
+simultaneous iteration of each iterable.
+
+#example
+#ZIP
+a = [1,2,3,4,5]
+b = {4,5}
+c = [2,3,4,5]
+    
+#for this we use Zip - concurrently loop all iterables at the same time
+for i, j, z in zip(a,b,c):
+    print(i*j*z)
+
+if the length of the list is not same
+it runs until the item which has minimum length.
+
+#Zip is used for removing data impurity i guess
+during our initial cleaning of data before we apply data science algorithms.
+
+#enumerate
+for iterating the array with combined simulataneous index and value of array
+
+a = ['a', 'b', 'c', 'd']
+
+for i,a in enumerate(a):
+    print(i)
+    print(a)
+
+crack an interview - operations involving index.
+
+#comprehension
+#List comprehension
+#interpretation
+#understanding of something
+
+#write all this in one statement
+[i*i for i in list_nos]
+
+result type is defined outside the list comprehension.
+
+# write a code using list comprehension to find the 3 times each number from the list
+# return type is a list
+
+[i+i+i for i in list_nos]
+
+words = ['inceptez', 'card', 'batch13', 'python', 'clwss']
+vowels = ['a', 'e', 'i', 'o', 'u']
+res = []
+
+for i in words:
+    for j in vowels:
+        if j in i:
+            res.append(i)
+
+[i for i in words for j in vowels if j in i]
+list comprehension
+1st block specifies the value to return
+we can move the full loops logic in 1 line
+
+to covert generator expressions
+we need to use list or tuple
+[], {},  - () not working
+we have o use tuple() to convert it to a tuple.
+
+we have set comprehension
+dict comprehension
+and no tuple comprehension.
+
+#List comprehension is the shorter form of returning and iterating over a iterable in a single line
+# we can use more than one for loop also
+# we dont have a limit for the same
+# its better to avoid more than 2 loops - as it becomes complex to understand
+
+h = [[[1,2]]]
+[z for i in h for j in i for z in j]
+
+#example for three loops in list comprehension
