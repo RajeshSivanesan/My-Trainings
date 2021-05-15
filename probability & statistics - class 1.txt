@@ -1,0 +1,119 @@
+Basics of statistics and probabilities
+
+what and why is the questions asked for a data scientiest when given a problem
+Analytics is a meaningful understanding of numbers
+Statistics - purpose of inferring proportions in a whole from those in a representative sample. 
+(mathematics taking and transforming numbers into useful info for decision makers.
+(help us to understand the data or get info from the data)
+(calculator for analytics)
+
+Frequency - over the spread of time period, how is the datas property.
+(Distribution)
+if the data is interpretable, then we can decide on some business requirements
+which is why we use statistics
+
+To make better decision - use statistics for fool proof. 
+Better sense of data (numbers) (right info about the data)
+
+its used for various purposes
+
+- for understanding the data
+- draw conclusions about the large sets
+- forecast about a business activity
+- improving the business process.
+
+Statistics is - interview question - one liner when asked
+Collecting Data
+Analyzing Data
+Interpreting Data
+Presenting Data
+
+Types of statistics
+
+Descriptive (presenting, organizing and summarizing data)
+Inferential (process on a small piece of sample, and infer the larger dataset)
+
+most of the cases we use descriptive statistics to start with inferential.
+
+Census - population whole (elections, census)
+Survey - a sample in a population - opinion polls
+
+Descriptive measure done on a whole population - called as Parameter
+Descriptive measure on a sample - called as Statistic
+(formula differs hence there is a split)
+
+Notations
+Mean of population - we will get it
+
+
+Variables
+(numerical or categorical)
+
+order based non numerical Quantitative - numeric values - discrete (everything we can count) and continous (everything we can measure it, including decimal points)
+discrete - how many rupees u have in hand. its countable.
+
+Qualitative - categorical (non numeric and has categories)
+nominal - which doesnt have any patterns (eg names, employeeid, gender, religion, aadhar numbers - unique labels)
+ordinal - which has a order non numeric values (eg - rank, mutual fund ratings, movie ratings)
+- note - difference between the consective values are not always equal.
+
+Variables - Dependent and independent
+
+for eg: Y = a + bX
+Y is dependent on the independent value of X
+how many every variables the dependent variable depend upon.
+
+Dependent variable on the y-axis and independent on x-axis
+Linear regression ( basic method for prediction machine learning algorithm)
+
+Summarizing Data (checklist to follow for summarizing data)
+(understanding of the data as a whole)
+
+Characteristics of Frequency distribution
+
+1) histogram - continuous values in x
+2) 
+Symmetry
+- equal amount of data on both sides of bell curve - called as symmetric
+- not equal - asymmetric - two types -
+positive or negative - skewed on the positive or negative
+
+Central Tendency - representation is the central point of the distribution.
+(Mean, Median, Mode)
+Outlier - a very high value which disturbs the mean
+if it has outlier use Median
+
+Arrange the data in increasing order
+find the mid-point n + 1 divide by 2 - agree
+
+mode - most frequently occuring element in the data set
+in the bell curve central point is the mode - if evenly distributed
+
+there is a possibility of mean = median = mode in a symmetric curve
+
+Modality
+in a graph of symmetric - head is the mode
+if one peak its unimodal
+if two peaks its bimodal
+can be more than 2 its polymodal
+
+one more parameter is needed when mean, median or mode is not able to summarize data
+
+called dispersion Methods
+describes the data spread.
+
+Range (max-min) - but its not consistency - time series
+
+Variance (standard deviation)
+ - deviation from mean. if we dont apply sqrt - its called variance.
+(x - mean)2 divide by n. sqrt f the value is standard deviation
+
+sqrt (sum(squares of difference) divide by n)
+
+Mean Absolute Deviation
+
+Interquartile
+
+
+
+
