@@ -1,0 +1,88 @@
+Central Limit Theorem
+
+Mean is the center point All the values lies to the right or left of the mean is called as normal distribution
+
+x - mean divide by standard deviation
+when we take a sample of >30
+what happens is that the sampling distribution of the mean is same of the population
+
+we get a bell curve
+mean of the population is almost same as mean of sample
+median will be sample
+
+sd = standard deviation of the population by the sqrt of the sample size of each block
+
+if we add more and more samples, standard deviation will be less and it populates more towards to the mean block.
+
+Assumption is standard error, mean is some value
+the sample's mean would be close to the mean of the population
+and error reduces = which is the formula i told.
+
+
+the diff between the actual mean and the sample mean is the error. That is why we refer as standard error.
+
+Given a population, taking sufficient n samples, the mean of the sample is almost of the mean of population, then the graph plotted against it
+will be a normal population.
+
+the sample we take, there is a possibility of sample piece being same which was processed, so it has to be replaced.
+
+higher the sample size, standard error is less and getting narrower to the mean.
+
+Nth percentile
+states that atleast N% of value less than or equal to this value and (100-N) values
+
+N divide by 100 * number of terms
+
+
+Using quartile - outliers are removed - box plot
+gives us 5 number summary of the dataset
+
+every 25th percentile should be a quartile.
+
+median of set one - 25th percentile is the first quartile
+
+interquartile range - diff between q3 - q1
+find outlier using IQR
+
+set a upper and lower limit, below that is an outlier or above that
+
+Lower limit = q1 - 1.5IQR
+upper limit = q3 + 1.5IQR
+
+for data cleaning purposes. 5 summary points Lower limit, q1, q2, q3, upper limit. Box plot
+for each and every column not for the full dataset.
+
+if in case of standard deviation being close
+we can use coefficient of variation
+
+SD divide by mean * 100%
+
+Univariate - one variable
+BiVariate - two variables
+kind of correlation (relationships between the two variables)
+
+CoVariance
+variance = (summ of x - mean)square divide by n sum - x-mean x- mean 
+
+covariance = (sum  of (x - mean)(y - ymean) divide by n
+
+if the covariance is higher, the relationship between them is higher.
+
+covariance value can be between -infinity to +infinity
+if on the negative side - negative relationships
+
+Correlation coefficent (its related by a non causatic variable)
+r = Cov(x,y) divide by Standard deviation of x * standard deviation of y
+
+the more we age => muscles to get tired => will make ur hair loss.
+the x and y are not covariated, but correlated
+
+CoVariance will explain the causation
+Correlation will explain the relationships
+
+basically on preprocessing we use correlation which internally uses the covariance.
+
+Scatter plot (correlation) - density plot (bell curve)
+
+Brandon Foltz
+- to understand the statistics - for doubts
