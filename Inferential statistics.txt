@@ -1,0 +1,44 @@
+Degree of freedom:
+understand it
+
+
+confidence interval is the error margin view for a data analytics. (amount of uncertainty)
+more the confidence interval, more the confidence level
+lesser the confidence interval, less the confidence level
+
+Accuracy - accuracy of the model, algorithm asked by the management for their confidence level.
+(margin of level is always there, is a statistical measure)
+
+Empirical split
+in a normal distribution, within -1sd to 1sd, 68% of population will be there
+between -2sd to 2sd - 95% of the population will be there
+-3 to +3 - 99% of the population
+
+the remaining 1% is the outliers.
+
+Margin of error - range expected variation for a given survey. Results of a survey would fall into the range of variation.
+
+Procedure used before invention of algorithms - this was used to make their things easy. This is calculated by hand.
+
+Margin of error = z * SE (standard of error). Margin of error directly proportional to the confidence levels.
+
+confidence intervals = mean +orminus M.E or mu +orminus M.E
+
+Margin of Error = z * SE (if z = 1, its equal to the Standard error). Z is the units of standard deviation (region coverage of the actual thing to occur)
+
+margin of error = 
+90% margin of error => z value - 1.64
+95% - its 1.96
+99% - its 2.58
+
+As sample size increases, confidence bcomes narrower and margin of error also will reduce, confidence level decreases.
+
+z-score table - http://sixsigmastudyguide.com/wp-content/uploads/2014/04/z-table.jpg
+u have to look like based on the Z value. 1.25 - means 1.20 value of z and 0.05 value in the y-axis.
+
+based on the question, answer the probability for it
+if they ask for less than some value = its the exact value
+
+
+if more than find the probability and reduce it by 1. The reason is the positive calculations is from left extreme to the current z-value.
+so if asked beyond, the current value do a minus of 1 - x.
