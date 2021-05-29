@@ -1,0 +1,53 @@
+Statistics - 28th May 2021
+
+Hypothesis Test (assumption, these are not facts)
+There are 2 hypothesis or AB testing
+types - null and alternative hypothesis
+here we disprove and not prove a fact
+
+null hypothesis - H0- example - coin is Fair (probability is equal for all options)
+(everything goes right, what could be the null hypothesis)
+
+Alternate - opp of null hypothesis - h1 or hA
+coin is biased
+coin has biased on one side of coin
+
+null can be equal to a value
+alternate can be <> or not equal to
+
+if having less than sign - lower tail is used
+if having greater than sign - higher tail is used
+if having not equal - two tail tests
+
+the gap between two critical points is called as confidence level
+alpha is called as the level of significance - with which the decision is made.
+
+confidence interval
+this much confidence the actual will occur within the range
+for ex 95% confidence level
+
+Inferential techniques
+z, t tests - sample distribution with means 
+chi-squared, F - based on variance.
+
+hypothesis testing steps
+ - calculate null and alternate hypothesis
+ - choose the level of significance - level which we reject the null hypothesis
+ - find critical values - act as boundary
+ - find test statistic - sample based that is used for test.
+ - Draw your conclusion - reject the null or accept hypothesis.
+
+Z-test assumptions
+population SD is known
+Sample size should be greater than 30
+something measurable is called on continous - it should be a number (discrete is countable)
+
+T-test
+sample size is less than 30
+population SD or variance is not known - found on 1908
+continuous interval ratio.
+
+same formula as Z-test, just replace SD of population to the SD of sample size.
+
+Degree of Freedom:
+when estimating mean or proportion of single sample, independent observations is n-1
