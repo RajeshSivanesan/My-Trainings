@@ -1,0 +1,119 @@
+Data warehousing
+
+warehousing - is a collection of procured items or everything saved it into a godown or a place.
+it will have all the product types (eg: departmental stores)
+
+similarily where we save all the data is called as data warehouse (al retail information is saved)
+like sales, marketing, invoices, demand etc. this wont get refreshed, its saved historically.
+Built on top of relational databases. Rows & columns. Everything is relational in nature. - homogeneous (tabular data)
+
+Data Lake - heterogeneous (non tabular data, like videos, images, etc)
+
+Data to a specific category is called as DataMart. (there are users who only look out for sales reports).
+(data created for a specific category). It can have multiple tables to target a particular category.
+This can be refreshed, for eg: we expect last three years of sales data.
+Understand its backup plan (HDFS), replication etc, data getting lost.
+
+Qualitative information - Dimension
+
+Quantitative information - can be aggregated. Called as a fact.
+
+Schema (how i model the warehouse, how are they related to each other)
+
+Star
+In the data warehouse world, if a fact is surrounded by multiple dimensions and their relationships. - called as Star schema
+Here we join the tables to get meaningfull information.
+
+Snowflake
+
+Types of Joins:
+
+inner-join - intersection between two tables
+select * from x innerjoin y on x.id == y.id
+(join the records by a unique key). If no matching records - it will empty.
+* will return the whole column data from both tables
+
+left-join
+select * from x leftjoin y on x.id == y.id
+if matched records, combine both
+if no matched records, the columns from left table (x) will come to the result and will put a null for the right column.
+
+right-join
+select * from x rightjoin y on x.id == y.id
+if matched records, combine both
+(reverse of left-join)
+
+full-outer-join
+all the records from both table will be there. if no matching record it puts either left or right as null.
+combination of left+right join as a one join.
+
+Live connection
+live connection between our tableau to the data source. It will automatically fetch records.
+Performance is slightly affected. Firing a query directly on the data source.
+
+Extract based dashboards
+tableau extracts the data and keep it as a application specific.
+in cases like every one day, we will refresh the dashboard. We can have a scheduler to load the latest data from data source
+performance of the dashboard is very good.
+
+Filters
+Data source filters
+apply filter on the data source level itself.
+
+data types can be changed as well on load.
+
+understand blending and cardinality (relationships one-one, one-many, many-one)
+
+now visualization part.
+
+Create visualization
+1) sheet - vizualization placeholder can hold only one chart. it cant have two charts
+2) dashboard - collection of sheets
+3) story - collection of dashboards.
+
+Discrete - Blue
+Continous - measures are in green in color
+which can be aggregated.
+
+for grouping in columns
+arrange it in a order of parent-child
+if not visualization not looking good. Because it doesnt group if child comes first before parent.
+
+Start performance recording - will tell us where the time is taking
+where we can see or visualize the queries given to the data source.
+
+tooltip can have a visualization also. We can include another sheet as well. Which will have intelligence to merge or track records.
+
+Detail - view not to change, but want to include that in the query alone - use this.
+
+tableau pulls a gradient of colors for range of colors
+when we put profit or sales on the detail pane.
+
+trend line 
+can be drawn for continous data - can be applied on the date
+YOY sales or profits.
+
+we can change the date to allow quarter wise, year wise
+
+Aggregated filter - where - apply filters on the aggregated value
+detailed filter - having
+
+quick filter which we drag and drop on the filter pane
+
+sort options available
+
+Parameters
+
+stacked bar charts
+put the color as the sub type of the main type
+we will get it
+
+there is an option called DualAxis - 2 pills will become 1 pill together. To lines on top of each other.
+We can use this for correlation.
+
+to bring all meausre names and values
+we can drag and drop the measure values and names for grouping
+
+
+
+

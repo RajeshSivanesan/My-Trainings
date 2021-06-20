@@ -1,0 +1,76 @@
+How do to publish - or access our dashboard
+
+we are going to create a own web server,
+they can embed their dashboard as a iframe with their content.
+this makes for easier conception
+
+talk to ui team and understand the best possible combination or layouts
+
+we prefer to use Range and get the max and min values from the ui team and 
+create dashboards for that.
+
+how do we drag and drop and follows floating
+tiled or
+floating layout
+
+make sure we have tiled layout as our pattern
+to arrange tiles in meaningful way, we can use containers
+
+its just a placeholder for the sheet
+we do have horizontal or vertical container.
+
+Horizontal container
+if we have two visualizations next to each other
+then we should be within a horizontal container
+one above the other, use a vertical container.
+
+we can have both on the same dashboard as well.
+Distribute contents equally - automatically adjust the horizontal items in the container
+to evenly take space
+post that we wont be alter width
+
+to make the full space to be occupied by the sheet, use Fit -> Fit entire view
+
+if a vizualization like doughut sheet we might have done very big
+if so, just go to sheet -> reduce size and remove header also
+u will get a better fit.
+
+reducing size automatically reduces the dashboard also.
+
+how do we bring interactivity
+action filter
+is for which we have for interactivity
+specific to tableau - dont hit data source
+
+click on the sheet and choose as use as filter to bring that
+if clicking the specific item it will filter all the sheets related to that.
+to undo, click on the same item it removes the use as filter.
+
+three ways of doing action filter
+hover - hove on the item
+select - on selecting the item itself
+menu - shows a filter name as menu, click on it to get the filter
+
+clearing the selection
+on unclick, show all the values which means is that it goes to the full state
+or keep the filtered values - it will retain the items which satisfies filter condition
+or exclude all the values - the sheet goes off - this is the concept for show or hide.
+if i unclick it
+interactivity can be used here, on click only show or hide a sheet. Exclude important option
+
+try to understand this interactivity after applying the dhoni data set. LEarn it today
+
+always do a relationship of filters - parent - child and not child to parent
+or else the reason we created is getting disturbed.
+
+we can use a Page Pane for creating a video visualization 
+to give a view of how it increased or decreased
+
+we can share the dashboard by story
+we get the html for the website to load into a iframe
+which will have all interactivity.
+
+<div class='tableauPlaceholder' id='viz1624169849807' style='position: relative'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;My&#47;MyBook_16235656481220&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;MyBook_16235656481220&#47;Story1?:language=en-US&amp;:embed=true' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;My&#47;MyBook_16235656481220&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1624169849807');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+https://public.tableau.com/views/MyBook_16235656481220/Story1?:language=en-US&:display_count=n&:origin=viz_share_link
+- link for the dashboard.

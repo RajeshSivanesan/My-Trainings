@@ -1,0 +1,98 @@
+for any kind of comparison between data
+we use bar charts and column charts
+
+for comparison over a period of time
+or continous - line chart would be good.
+(never ever go for line chart, if the data is not continuous (discrete) - or has no relationship)
+(granularity is more like month, day, bar charts way of representing data is not good)
+
+cyclic graph
+spider web charts
+
+Relation
+how do we show relationships
+ex: sales vs profits
+(sales cant be always directly proportional to profits)
+driving more sales, can be either way of increasing or getting profits than what is expected
+(scatter plot) - relationship between two diff measures.
+(to understand which product sales is doing good)
+
+variation of scatter plot
+(bringing quantity on the scatter plot)
+(symbolically identified - size of the plot)
+(bubble chart)
+(scatter plot - include a third measure - parameter "Quantity" -> use bubble chart)
+
+Proportion:
+Pie Chart
+percentage of total can be visualized by that.
+entire percentage of total how each is proportioned.
+*human eyes wont be able to catch very less difference, or with more and more pies with less percentage.
+if thats the case, we need to avoid pie chart.
+
+we can use Dot Chart
+Donut is one variation of pie chart
+Dial chart - on a single measure, how much percentage is reached from a goal (target)
+(ex: 10000 steps per day, how much percentage is reached from goal)
+Bullet chart - try to understand.
+marketing sales among diff people, can be visualized with bullet chart
+it tells how much expected, but how much reache - can be outweighed or below target
+
+another visualization or variation of pie chart
+breaking of that pie into a bar chart they call it a stacked 100% bar chart
+all the bars will be of same height. (100%)
+one will be stacked on top of another.
+(can be used for comparing over a period of time with others, or to understand the proportion within each over a period of time)
+
+limitation of stacked bar chart
+wont be able to see the real value - since its changed to percentages.
+
+so we now plot it against the real runs value and then internally have its proportions
+(stacked bar chart)
+can be extended as a stacked line chart called as - stacked area chart or stacked 100% area chart - over a period of time.
+
+Distributions
+Histogram is a good tool for visualization
+on a single measure - count the number of customers
+we distribute the amount into a range and distribute it with the number of customers on y-axis
+
+if two variables - scatter plot.
+diff between bar chart vs histogram
+histogram uses x-axis is based on a range (binning)
+bar chart is based on a discrete value not on a range.
+
+Tableau (predictive and interactive)
+BI tool
+
+products
+Tableau Desktop - create dashboards and send it across to customers or clients (window based tool, install this on windows)
+(authoring tool) - this is a licensed product - 14 day trial product. - yearly subscription
+can connect to a variety of databases. data sources are more
+companies will use this setup. since its secure
+student license for 1 year free. (per user its 70$)
+
+Tableau Server - common piece where all our dashboards can be shared. Across diff teams to be used
+(licensed, access via urls - hosted on your server)
+
+Tableau public - Free version desktop
+limitations are there, since its free
+only csv's and excel - cant connect to a oracle database. data sources are less.
+we cannot save our dashboard - workbook
+we need to create a tableau cloud account to save our changes.
+
+Tableau online
+hosted in cloud. publish dashboards and share ur work with collaborators to explore hidden opportunities with the data visualizations. It can be accessed
+on a browser or go with mobile apps.
+
+Tableau reader - free version - shared between two people. Reader can use that for reading the same.
+we can open and interact with data visualization built in tableau Desktop.
+just a reader
+
+Fact or dimension
+qualitative information is called dimensions
+quantitative information is called as Fact
+
+in general data warehouse
+place where all fact and dimentions is joined together by a unique id (kind of merge)
+combined fact and dimensions table
+
