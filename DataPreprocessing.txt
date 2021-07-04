@@ -1,0 +1,234 @@
+why data preprocessing (experimental use)
+in real time, data will be very messy. 90% of the time we need to do data preprocessing
+we will be scratching our heads for a long time.
+
+Many steps to follow:
+all outlier is not a bad data
+
+how can we handle the outlier
+apply a business sense to a data to identify the outlier
+
+z-score
+number or how much sigma or standard deviations deviated from the mean.
+how much we are deviated from the mean - its standard deviation.
+
+we use z-score to have the data in the similar scale. normalizing the data
+99.7% of data lies in between -3sigma to +3 sigma
+
+so post that we can consider that as a outlier. when plotting a bell curve.
+-5sigma to +5sigma - covers the 99.9% data lies. Post that only 0.01 data lies
+
+in real time, we say -5sigma to +5sigma is considered as a outliner
+or either use box plot or z-score.
+
+there is no single solution for a problem. Go for a better solution. 
+worst or best case for data science. There is no wrong solution.
+
+second way of normalization is using normal distibution
+
+normal distribution = x-min divide by max-min
+
+data is ranging between 0 and 1. advisable to do when we have a numerical data. 
+
+from scipy import stats
+stats.zscore([dataset values])
+
+bell curve is saying is adding more data, if u r converting the data in zscore model, it 
+gives the 99.7% values in the range of -5sigma to +5sigma
+95% data will lie in the range of 
+
+since mean and sigma is directly proportional, at a time, zscore becomes constant.
+
+how do we write a bell curve
+
+doing a normalization, there is a possibility data is skewed to one end.
+because our data is having higher on one range
+
+to make it to a similar range or having outlier, better to use zscore
+if no, go with normalization.
+resource utilization is better for standardization.
+
+any string can be a object type.
+
+to get the statistics of a dataset, use .describe()
+
+median - middle number in a sorted values
+before sorting we should not apply median.
+
+25% - first quartile, 50% (median) - second quartile, 75% - third quartile.
+since sorted
+median of first half - 25%
+median of second half - 50%
+median of third half - 75%
+
+non categorical data we cant find mean, median
+use factors as unique, count, top, , frequency
+
+can we have two mean, median, mode
+
+list can have one mean, median
+mean may or may not be in the dataset
+median for odd number of values - have the number in the data
+median for even number - have no number in the data
+mode will always be there in the data
+mode can be more than 1
+mean and median will be only 1
+
+changing the data.columns name
+data.columns = [] - to change all column names
+to change only one column - data.rename(columns={
+Age: 'new_column_name'
+})
+use inplace = true
+
+data.shape() - to get the length of rows and columns
+data.isna().sum() -> check for isNa count
+data.notna().sum() -> check for is not na count
+
+
+drop data
+data.drop('age', axis = 'columns')
+data.drop('age', index = rowIndex)
+
+Loc vs iLoc
+data.iloc[2, 1] = changing value
+data.loc[2, 'age'] = changing value
+
+data.loc[2:, 'age':]
+to get all unique values
+data['organization'].unique()
+
+for string manipulation
+replace string if not in the same scale or irregularities.
+
+to get the mode of each string repeat
+use value_counts()
+
+data.dropna(subset= ['column_name'], inplace=True) -> drop the na items in the data_set
+
+fillNa() -> to fill the values of nan with a value
+to get the mode of data use data['column_name'].mode() - it will return an array
+hence access it as [0] or [1]
+
+choose median for filling na, if we think outlier is there
+if there is no outlier, go with mean
+
+groupby().value.mean()
+groupBy find the mean of a particular column
+
+we could use data.query also for filtering records as sql way
+or use data[data[] == condition]
+
+to remove duplicate or find our the dupplicates
+data[data.duplicated()]
+
+on a row level for now
+or use custom logic to remove duplicates - iterate for each column
+and then drop the duplicates.
+
+data.corr()
+relationship between columns
+if the correlation is duplicated, the value would be 1
+this way we can identify and remove the columns which are duplicated.
+
+data.drop_duplicates()
+
+import matplotlib.pyplot as plt
+plot a box 
+data['age'].plot(kind = 'box')
+
+from google.colab import drive
+drive.mount('content slash drive)
+
+post that use ls and cd to go to the right folder
+
+df.describe().T
+transform the columns and rows - somehow.
+
+for each column find unique count of values
+df.apply(lambda x:print(x.value_counts())
+
+replace can be used to replace all variations into one
+and not have a multiple
+
+del command also be used for deleting a column frame.
+df.drop(index=136)
+for going via index, we go one less or one greater
+
+when accessing mode, mode can be more so use [0]
+
+categorical - nominal (names, colors) - no order -- ordinal -- order (movie rating), 
+numerical - discrete (age) - countable, continuous - measurable
+
+if the value is within a range like 1k, 10k etc - it can be discrete
+
+whenever we have a float value - can be a continuous.
+
+machine learning only works with numbers
+so a dataset has to be converted to a format to take it up by a model
+
+- ML model -> rule is to be a numerical data
+
+what all ways to convert to numerical
+
+label encoding - is done on a ordinal data
+replacing the different labels with a number
+example - feedback weightage 
+worst - 2,very worst - 1, good - 3, better - 4, very good - 5
+
+one of the techniques used for nominal data
+is one hot encoding
+
+create a column for each label and mark as 1's and 0's for the corresponding column
+for datasets which has more columns, we will try to bin or combine related data, if
+we decide all labels are essential, create the whole list of label and give it to the ML and see
+how it works.
+
+we give the equal weightage for all the labels.
+
+other encoding types
+Binary encoding
+hashing encoding
+
+it all depends on the domain which determines the data size. Sales etc
+
+machine learning understands only numbers. It wont accept NaN. so we need to fillna with a particular value or else 
+ML may fail.
+
+to segregate colums which are numeric
+to identify use df.select_dtypes(include=np.number).columns
+for categorical data use exclude=np.number
+this will help us to find out if we have more number of columns
+
+to convert category to a dummy encoded data
+pd.get_dummies(df[categorical_columns])
+
+understand how it works
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
+
+min_max = MinMaxScaler()
+min_max.fit_transform(df[["column"]])
+this will create a min and max scale 0 - 1
+
+standard_scale = StandardScaler()
+standard_scale.fit_transform(df[["column"]])
+it does the zscore scaling as -3sigma etc
+
+apply a dataFrame on the result coming out.
+preprocessed_numeric = pd.DataFrame(function, columns=columns_name);
+
+whenever we have a binary data, its like a switch, no weightage here.
+
+there is a possibility some data might have removed, index might be missing
+so its better to reset_index() before forming the dataFrame
+
+concat the diff dataFrames
+pd.concat([df1, df2], axis=1)
+
+pd.read_csv('path', sep=";") - > if in case of issue with csv seperator
+is better to copy on a dataFrame before starting changes.
+data_work = data.copy()
+
+there seems to be a single liner to do all these preprocessing to save time - discuss once we have clarity
+
+df_work.Outlet_Size.fillna('others', inplace = True)
