@@ -1,0 +1,4 @@
+Linear regression
+-- see the video, gain the knowledge
+
+try some examples and get some idea.

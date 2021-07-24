@@ -1,0 +1,105 @@
+sklearn pipeline
+when scaling is mandatory - always not mandatory
+doing scaling is just a step which may or may not be distributed. Very simple convert different scale of data into same range
+based on some condition - its good to do
+- we scale all the values into a single scale so that range is lesser and making data to be less skewed.
+
+we can standard scaling or minmax scale
+
+EDA is done on the given data. After that we do the preprocessing.
+
+same scale
+two ways 
+min_max scaling (0-1) and standard scaling (z-score)
+min_max = X - min divde by max - min
+standard scaler = x - mean divide by standard deviation
+
+in practical use sklearn.preprocessing import StandardScaler, MinMaxScaler
+we create an object from the class. we do fit and transform the dataset, it will convert the data to the expected scale.
+
+we are supposed to do the same thing for train and test data. IF scaled, it should be scaled or else the prediction will change.
+
+understand the possible steps in data processing.(always focus on the business problem and not on technical problem)
+(for each data set, the steps may vary, so please combine and learn all techniques)
+
+EDA is a big part, and pre-processing is a another part.
+
+Train - Test
+Over-fitting - model is
+very good at train, but failing in test data - very common in real time
+
+train having high error, test data has high error - its called underfitting
+
+Polynomial regression
+add up a degree on a independent variable, X -> X2, X3, Y
+taking this 3 inputs and pass into linear regression - polynomial regression
+
+multi-collinearity is not considered in polynomial regression. which degree which we have to go with- need to find
+
+increasing the complexity of the model, train error will be lesser and test error will be high.
+when the degree goes to 5, we do have overfitting. So stop at the moment
+
+from sklearn.preprocessing import PolynomialFeatures
+if degree 2 for a,b indenpendent variable, it creates 1 (constant), a, b, a2, b2, ab
+
+poly = PolynomialFeatures()
+poly.fit_transform(X)
+
+why polynomial has 1 as a constant variable. X power 0 is 1
+
+underfitting (high bias) -> just right -> overfitting (high variance) (since it captures all noise also)
+we need to make sure, our ideal model should have low variance and low bias
+
+Bias - variance
+3 important points to remember
+
+High Bias --> High Variance
+simple model	Complex model
+underfitting	overfitting
+any change	any change in data point, coefficients will change, which will impact the fit
+in data point,	(drastic change)
+coefficient(slope)
+wont change
+much
+
+we cant have an ideal model. We have to trade off (work of data scientist)
+
+regularization - mitigate the overfitting
+minimize the coefficient
+
+we are going to change the cost function
+Ridge regression (L2)
+MSE + penalization factor 
+lambda[m]2
+we need to find m which is a lesser value to reduce the cost function
+kind of making it generic, add a penalization factor, which will helps us to avoid any surprises in production, test data
+how to do this
+gradient descent
+global minimum - in terms of linear regression
+- best fit line reduce the cost (MSE) function with finding the 
+ridge wont become 0. It will be close to 0.
+
+Lasso regression
+Least absolute shrinkage selection operator
+feature selection algorithm.
+the coefficient of non significant ones will become zero
+
+the only difference between both is in ridge we do lambd[m]2, in lasso we do lamda[abs(m)]
+
+lambda = controlling factor
+if 0, it becomes normal linear regression
+if increases, it will have more higher penalty
+Ridge(alpha = )
+Lasso(
+its the lamda
+
+Elastic net
+ElasticNet(
+ridge + lasso
+it internally uses gradient descent
+
+more the alpha the coeffient will be lesser, since its not steep curve
+
+regularization will only generalize the dataset, may or may not improve the performance
+it adds error on the train data, when test data is introduced we dont have any surprises.
+(it will reduce the overfitting for sure)
